@@ -18,7 +18,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 
 // MongoDB Connection
-mongoose.connect(process.env.mongoDBURL);
+mongoose.connect("mongodb+srv://presi123:presi123@cluster0.dfo33ti.mongodb.net/PlacementDB?retryWrites=true&w=majority");
 
 // Code block to serve frontend from server : 
 // (Replace client with your frontend folder name)
